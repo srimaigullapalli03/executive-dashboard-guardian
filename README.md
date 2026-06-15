@@ -205,19 +205,6 @@ Delta tables are queryable by Power BI. A data quality dashboard showing violati
 
 ---
 
-## Interview Q&A
-
-**"How do you detect duplicates at scale?"**
-MD5 row hashes computed at ingestion time. Grouping by `_row_hash` and counting > 1 finds exact duplicates without comparing every column individually.
-
-**"How do you decide what counts as a revenue anomaly?"**
-Z-score over a rolling window. A Z-score above 3 means the value is more than 3 standard deviations from the mean — statistically extremely unusual.
-
-**"What happens when a check fails?"**
-"Fail open, alert loud" pattern. All checks run regardless of earlier failures so you get a complete picture. Violations write to Delta, but data continues flowing so dashboards don't go blank.
-
----
-
 ## Author
 
 Srimai Gullapalli
