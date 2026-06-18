@@ -206,12 +206,12 @@ Power BI        → 4 executive visualizations
 **LEFT — With Guardian:** Data quality checks caught 50,000 duplicate orders and inflated payment values BEFORE they reached the dashboard. Numbers shown are trusted and accurate. Daily revenue follows a clean growth trend, categories show real performance, and seller cities reflect actual sales.
 
 **The Difference:** $500K+ in fake revenue would have reached executives without monitoring.
-The Gold layer feeds a Power BI executive dashboard with:
-- **Top Seller Cities** — Bar chart ranking the top 10 seller cities by revenue, with São Paulo leading at $4M, followed by Ibitinga, Curitiba, and Rio de Janeiro
-- **Brazil Revenue Map** — Geographic bubble map of Brazil showing revenue distribution across all 27 states, with the largest bubbles concentrated in São Paulo and the southeastern region
-- **Daily Revenue Trend (2016-2018)** — Line chart showing daily revenue patterns from 2016 to 2018, with peaks reaching $1.5M on high-volume days
-- **Revenue by Product Category** — Bar chart of the top 10 product categories (in Portuguese from the Olist dataset), led by Beleza_Saude (Health & Beauty), Relogios_Presentes (Watches & Gifts), and Cama_Mesa_Banho (Bed/Bath/Table)
+The Gold layer feeds an interactive Tableau dashboard with 4 executive visualizations:
 
+- **Top Seller Cities** — Bar chart ranking the top 10 seller cities by revenue, with São Paulo leading at $2.5M, followed by Ibitinga, Curitiba, and Rio de Janeiro
+- **Brazil Revenue Map** — Geographic bubble map of Brazil showing revenue distribution across all 27 states, with the largest bubble in São Paulo (~$9.6M) and significant revenue concentration in the southeastern region
+- **Daily Revenue Trend (2016-2018)** — Line chart showing daily revenue patterns from 2016 to 2018, with a clean growth trend peaking around 175K during the December 2017 Black Friday season
+- **Revenue by Product Category** — Bar chart of the top 10 product categories, led by Beleza_Saude (Health & Beauty), Relogios_Presentes (Watches & Gifts), and Cama_Mesa_Banho (Bed/Bath/Table) — all around $1.2M
 
 
 ---
