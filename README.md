@@ -227,22 +227,6 @@ Delta tables are queryable by Power BI. A violation trends dashboard is more use
 
 ---
 
-## Interview Q&A
-
-**"How do you detect duplicates at scale?"**
-MD5 row hashes computed at ingestion time. Grouping by `_row_hash` and counting > 1 finds exact duplicates without comparing every column individually.
-
-**"How do you decide what counts as a revenue anomaly?"**
-Z-score over a rolling window. A Z-score above 3 means the value is more than 3 standard deviations from the mean — statistically extremely unusual.
-
-**"What happens when a check fails?"**
-Violations are written to a Delta table and logged with full context (table, column, severity, timestamp). The team queries the violations table to triage and respond. The pipeline continues operating to avoid cascading failures.
-
-**"Why not block the pipeline on failure?"**
-Stopping the pipeline can cause downstream systems to use even staler data than what we caught. Monitoring + alerting lets the team decide whether to halt, rollback via Delta time travel, or continue with a flag — depending on severity.
-
----
-
 ## Author
 
 Srimai Gullapalli — Data Engineer Portfolio Project
