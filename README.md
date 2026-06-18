@@ -198,7 +198,7 @@ Power BI        → 4 executive visualizations
 
 ## Power BI Dashboard
 
-![Executive Dashboard](dashboard_screenshot.png)
+![Executive Dashboard](comparison_before_after.png)
 
 The Gold layer feeds a Power BI executive dashboard with:
 - **Daily Revenue Trend** — 2016 to 2018 line chart
