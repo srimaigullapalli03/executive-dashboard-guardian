@@ -199,12 +199,20 @@ Power BI        → 4 executive visualizations
 ## Dashboard
 
 ![Executive Dashboard](comparison_before_after.png)
+## Live Demo — Before and After Data Quality Monitoring
 
+**RIGHT — Without Guardian:** Bad data flows directly to the dashboard. Revenue spikes wildly (up to $1.5M/day from duplicates), top categories show inflated $2M+ figures, and São Paulo's revenue appears to be $4M (actual: $2.5M). Executives making decisions on this data would invest based on fake growth.
+
+**LEFT — With Guardian:** Data quality checks caught 50,000 duplicate orders and inflated payment values BEFORE they reached the dashboard. Numbers shown are trusted and accurate. Daily revenue follows a clean growth trend, categories show real performance, and seller cities reflect actual sales.
+
+**The Difference:** $500K+ in fake revenue would have reached executives without monitoring.
 The Gold layer feeds a Power BI executive dashboard with:
-- **Daily Revenue Trend** — 2016 to 2018 line chart
-- **Top Seller Cities** — São Paulo, Ibitinga, Curitiba ranking
-- **Revenue by Brazilian State** — geographic bubble map
-- **Top Product Categories** — Health & beauty, watches & gifts leading
+- **Top Seller Cities** — Bar chart ranking the top 10 seller cities by revenue, with São Paulo leading at $4M, followed by Ibitinga, Curitiba, and Rio de Janeiro
+- **Brazil Revenue Map** — Geographic bubble map of Brazil showing revenue distribution across all 27 states, with the largest bubbles concentrated in São Paulo and the southeastern region
+- **Daily Revenue Trend (2016-2018)** — Line chart showing daily revenue patterns from 2016 to 2018, with peaks reaching $1.5M on high-volume days
+- **Revenue by Product Category** — Bar chart of the top 10 product categories (in Portuguese from the Olist dataset), led by Beleza_Saude (Health & Beauty), Relogios_Presentes (Watches & Gifts), and Cama_Mesa_Banho (Bed/Bath/Table)
+
+
 
 ---
 
