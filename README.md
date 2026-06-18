@@ -196,7 +196,7 @@ Power BI        → 4 executive visualizations
 
 ---
 
-## Power BI Dashboard
+## Dashboard
 
 ![Executive Dashboard](comparison_before_after.png)
 
